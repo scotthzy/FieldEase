@@ -1,0 +1,53 @@
+<view class="booking-page">
+  <view class="navigation" style="padding-top: {{statusBarHeight}}px;">
+    <view
+      class="navigation-row"
+      style="height: {{navigationBarHeight}}px; padding-right: {{navigationRightPadding}}px;"
+    >
+      <text class="navigation-title" overflow="ellipsis" max-lines="1">预约场地</text>
+    </view>
+  </view>
+
+  <scroll-view class="booking-content" type="list" scroll-y>
+    <view class="booking-form">
+      <view class="form-field">
+        <text class="field-label">预约日期</text>
+        <picker
+          mode="date"
+          value="{{date}}"
+          bindchange="onDateChange"
+        >
+          <view class="picker-field">
+            <text>{{date || '请选择日期'}}</text>
+          </view>
+        </picker>
+      </view>
+
+      <view class="form-field">
+        <text class="field-label">开始时间</text>
+        <picker
+          mode="time"
+          value="{{startTime}}"
+          bindchange="onStartTimeChange"
+        >
+          <view class="picker-field">
+            <text>{{startTime || '请选择开始时间'}}</text>
+          </view>
+        </picker>
+      </view>
+
+      <view class="form-field">
+        <text class="field-label">结束时间</text>
+        <picker
+          mode="time"
+          value="{{endTime}}"
+          bindchange="onEndTimeChange"
+        >
+          <view class="picker-field">
+            <text>{{endTime || '请选择结束时间'}}</text>
+          </view>
+        </picker>
+      </view>
+    </view>
+  </scroll-view>
+</view>
