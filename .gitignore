@@ -1,2 +1,6 @@
 AGENTS.md
 DAY3_RESERVATION_FLOW.md
+.DS_Store
+node_modules/
+.playwright-cli/
+project.private.config.json

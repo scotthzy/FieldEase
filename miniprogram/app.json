@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/booking/booking"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "renderer": "skyline",
+  "componentFramework": "glass-easel",
+  "lazyCodeLoading": "requiredComponents",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "defaultContentBox": true,
+      "disableABTest": true
+    }
+  }
+}
