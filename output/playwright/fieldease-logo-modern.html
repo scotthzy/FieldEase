@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FieldEase Logo</title>
+  <style>
+    :root {
+      --field: #103f35;
+      --line: #598176;
+      --chalk: #f5f4e9;
+      --available: #d2ef80;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 144px; height: 144px; overflow: hidden; }
+    .logo {
+      position: relative;
+      width: 144px;
+      height: 144px;
+      background: var(--field);
+    }
+    .pitch {
+      position: absolute;
+      inset: 23px 29px;
+      border: 2px solid var(--line);
+      border-radius: 16px;
+    }
+    .halfway {
+      position: absolute;
+      top: 70px;
+      left: 30px;
+      width: 84px;
+      height: 2px;
+      background: var(--line);
+    }
+    .center-circle {
+      position: absolute;
+      top: 58px;
+      left: 59px;
+      width: 26px;
+      height: 26px;
+      border: 2px solid var(--line);
+      border-radius: 50%;
+    }
+    .monogram {
+      position: absolute;
+      top: 41px;
+      left: 46px;
+      width: 53px;
+      height: 64px;
+      filter: drop-shadow(0 0 3px var(--field));
+    }
+    .stem, .top, .middle {
+      position: absolute;
+      background: var(--chalk);
+      border-radius: 4px;
+    }
+    .stem { top: 0; left: 0; width: 12px; height: 64px; }
+    .top { top: 0; left: 0; width: 53px; height: 12px; }
+    .middle { top: 25px; left: 0; width: 40px; height: 12px; }
+    .ball {
+      position: absolute;
+      top: 89px;
+      left: 85px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--available);
+    }
+  </style>
+</head>
+<body>
+  <main class="logo" role="img" aria-label="FieldEase: football pitch with an F monogram and an available-field marker">
+    <div class="pitch"></div>
+    <div class="halfway"></div>
+    <div class="center-circle"></div>
+    <div class="monogram"><div class="stem"></div><div class="top"></div><div class="middle"></div></div>
+    <div class="ball"></div>
+  </main>
+</body>
+</html>
