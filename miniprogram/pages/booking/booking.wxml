@@ -48,6 +48,29 @@
           </view>
         </picker>
       </view>
+
+      <view class="form-field">
+        <text class="field-label">场地区域</text>
+        <picker
+          mode="selector"
+          range="{{areaOptions}}"
+          range-key="label"
+          value="{{selectedAreaIndex}}"
+          bindchange="onAreaChange"
+        >
+          <view class="picker-field">
+            <text>{{selectedAreaLabel || '请选择场地区域'}}</text>
+          </view>
+        </picker>
+      </view>
+
+      <button
+        class="submit-button"
+        hover-class="submit-button-hover"
+        bindtap="onSubmit"
+      >
+        <text>提交预约</text>
+      </button>
     </view>
   </scroll-view>
 </view>
